@@ -1,0 +1,35 @@
+@use '../../scss/mixins';
+
+.LockCover {
+    @include mixins.fullscreen;
+    @include mixins.wallpaperbg;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: top 0.5s ease-out, opacity 0.25s ease;
+}
+
+.LockCoverHidden {
+    top: -100%;
+}
+
+div.currentTime {
+    @include mixins.fonttype('light');
+
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    p.title {
+        font-size: 120px;
+        margin-bottom: -16px;
+    }
+
+    p.subtitle {
+        font-size: 64px;
+    }
+}

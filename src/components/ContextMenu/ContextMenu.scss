@@ -1,0 +1,37 @@
+.context-menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+
+    & .context-menu {
+        z-index: 99999;
+        pointer-events: all;
+        font-size: 14px;
+        color: white;
+        background-color: #353535;
+        border-radius: 2px;
+        padding: 0;
+        width: 150px;
+        height: auto;
+        margin: 0;
+        /* use absolute positioning  */
+        position: absolute;
+        list-style: none;
+        box-shadow: 0 0 20px 0 #353535;
+        opacity: 1;
+        transition: opacity 0.5s linear;
+
+        & > li {
+            padding: 6px;
+
+            &:hover {
+                box-sizing: border-box;
+                box-shadow: 0 0 1px #ccc;
+                background-color: #444;
+            }
+        }
+    }
+}

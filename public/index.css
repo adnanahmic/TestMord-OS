@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('/fonts/Roboto-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('/fonts/Roboto-Medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('/fonts/Roboto-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Italic';
+  src: url('/fonts/Roboto-Italic.ttf') format('ttf');
+}
+
+html, body {
+  background: rgb(1, 1, 16);
+  font-family: 'Roboto', 'sans-serif';
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
